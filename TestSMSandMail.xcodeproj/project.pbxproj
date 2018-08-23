@@ -12,6 +12,13 @@
 		983820E321246E270055B5DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983820E121246E270055B5DE /* Main.storyboard */; };
 		983820E521246E280055B5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983820E421246E280055B5DE /* Assets.xcassets */; };
 		983820E821246E280055B5DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983820E621246E280055B5DE /* LaunchScreen.storyboard */; };
+		983820F0212476B80055B5DE /* MailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983820EF212476B80055B5DE /* MailHelper.swift */; };
+		9857F20F212F18DA0093D088 /* ActionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98884569212B1344007297C4 /* ActionViewCell.xib */; };
+		9857F211212F1C2C0093D088 /* ViewController+Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857F210212F1C2C0093D088 /* ViewController+Compose.swift */; };
+		9857F213212F1C8E0093D088 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857F212212F1C8E0093D088 /* ViewController+Actions.swift */; };
+		98884561212B0826007297C4 /* SMSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884560212B0826007297C4 /* SMSHelper.swift */; };
+		98884563212B101F007297C4 /* ViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884562212B101F007297C4 /* ViewController+Table.swift */; };
+		9888456A212B1344007297C4 /* ActionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884568212B1344007297C4 /* ActionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		983820E421246E280055B5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		983820E721246E280055B5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		983820E921246E280055B5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983820EF212476B80055B5DE /* MailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailHelper.swift; sourceTree = "<group>"; };
+		9857F210212F1C2C0093D088 /* ViewController+Compose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Compose.swift"; sourceTree = "<group>"; };
+		9857F212212F1C8E0093D088 /* ViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
+		98884560212B0826007297C4 /* SMSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSHelper.swift; sourceTree = "<group>"; };
+		98884562212B101F007297C4 /* ViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Table.swift"; sourceTree = "<group>"; };
+		98884568212B1344007297C4 /* ActionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewCell.swift; sourceTree = "<group>"; };
+		98884569212B1344007297C4 /* ActionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		983820DC21246E270055B5DE /* TestSMSandMail */ = {
 			isa = PBXGroup;
 			children = (
+				98884566212B131F007297C4 /* View */,
+				98884565212B11CA007297C4 /* Controllers */,
+				98884564212B11BE007297C4 /* Helper */,
 				983820DD21246E270055B5DE /* AppDelegate.swift */,
-				983820DF21246E270055B5DE /* ViewController.swift */,
 				983820E121246E270055B5DE /* Main.storyboard */,
 				983820E421246E280055B5DE /* Assets.xcassets */,
 				983820E621246E280055B5DE /* LaunchScreen.storyboard */,
 				983820E921246E280055B5DE /* Info.plist */,
 			);
 			path = TestSMSandMail;
+			sourceTree = "<group>";
+		};
+		98884564212B11BE007297C4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				983820EF212476B80055B5DE /* MailHelper.swift */,
+				98884560212B0826007297C4 /* SMSHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		98884565212B11CA007297C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				983820DF21246E270055B5DE /* ViewController.swift */,
+				98884562212B101F007297C4 /* ViewController+Table.swift */,
+				9857F210212F1C2C0093D088 /* ViewController+Compose.swift */,
+				9857F212212F1C8E0093D088 /* ViewController+Actions.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98884566212B131F007297C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98884567212B1327007297C4 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98884567212B1327007297C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98884568212B1344007297C4 /* ActionViewCell.swift */,
+				98884569212B1344007297C4 /* ActionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9857F20F212F18DA0093D088 /* ActionViewCell.xib in Resources */,
 				983820E821246E280055B5DE /* LaunchScreen.storyboard in Resources */,
 				983820E521246E280055B5DE /* Assets.xcassets in Resources */,
 				983820E321246E270055B5DE /* Main.storyboard in Resources */,
@@ -135,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9888456A212B1344007297C4 /* ActionViewCell.swift in Sources */,
+				983820F0212476B80055B5DE /* MailHelper.swift in Sources */,
+				9857F213212F1C8E0093D088 /* ViewController+Actions.swift in Sources */,
+				98884561212B0826007297C4 /* SMSHelper.swift in Sources */,
 				983820E021246E270055B5DE /* ViewController.swift in Sources */,
+				98884563212B101F007297C4 /* ViewController+Table.swift in Sources */,
 				983820DE21246E270055B5DE /* AppDelegate.swift in Sources */,
+				9857F211212F1C2C0093D088 /* ViewController+Compose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FX7X5MR74;
 				INFOPLIST_FILE = TestSMSandMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.TestSMSandMail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FX7X5MR74;
 				INFOPLIST_FILE = TestSMSandMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.TestSMSandMail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
